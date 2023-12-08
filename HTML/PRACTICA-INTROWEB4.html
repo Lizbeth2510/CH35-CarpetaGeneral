@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Formulario de adopción</title>
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="./Assets/styles/style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
+</head>
+
+<!--Body-->
+<body>
+<div class="abc">
+   <section class="container" action="procesar_formulario" method="post">
+      <header>Formulario para la adopción de mascotas</header>
+   
+      <form class="form">
+         <h5>Datos del adoptante</h5>
+         <div class="input-box">
+            <label for="candidato">Nombre:</label>
+            <input type="text" name="nombre del adoptante" placeholder="Nombre completo">
+         </div>
+         <div class="input-box">
+            <label for="candidato">Correo electrónico:</label>
+            <input type="email" name="correo del adoptante" placeholder="Correo electrónico ">
+         </div>
+         <div class="column1">
+            <div class="input-box">
+               <label for="candidato">Edad:</label>
+               <input type="number" name="Edad del adoptante" placeholder="Edad ">
+            </div>
+            <div class="input-box">
+               <label for="candidato">Teléfono:</label>
+               <input type="tel" name="Teléfono del adoptante" placeholder="Teléfono ">
+            </div>
+         
+         </div>  
+         <div class="input-box">
+            <label for="candidato">Ocupación:</label>
+            <input type="text" name="ocupación del adoptante" placeholder="Ocupación">
+         </div> 
+         <div class="Hogar-box">
+            <div class="option-box">
+               <label for="candidato">Cuentas con:</label>
+               <div class="tipocasa-option">
+                  <div class="tipocasa">
+                     <input checked="" name="tipocasa" id="check-departamento" type="radio">
+                     <label for="check-departamento">Departamento</label>
+                  </div>
+                  <div class="tipocasa">
+                     <input checked="" name="tipocasa" id="check-casapropia" type="radio">
+                     <label for="check-casapropia">Casa propia</label>
+                  </div>
+                  <div class="tipocasa">
+                     <input checked="" name="tipocasa" id="check-casaenrenta" type="radio">
+                     <label for="check-casaenrenta">Casa en renta</label>
+                  </div>
+   
+               </div>
+              
+            </div>
+            <div class="option-box">
+               <label for="candidato">Cuentas con:</label>
+               <div class="tipoespacio-option">
+                  <div class="tipoespacio">
+                     <input checked="" name="tipoespacio" id="check-patio" type="radio">
+                     <label for="check-patio">Patio</label>
+                  </div>
+                  <div class="tipoespacio">
+                     <input checked="" name="tipoespacio" id="check-terraza" type="radio">
+                     <label for="check-terraza">Terraza</label>
+                  </div>
+                  <div class="tipoespacio">
+                     <input checked="" name="tipoespacio" id="check-jardin" type="radio">
+                     <label for="check-jardin">Jardín</label>
+                  </div>
+               </div>
+   
+   
+   
+   
+            </div>
+         </div>
+         <h5>Datos de la mascota</h5>
+         <div class="input-box">
+            <label for="mascota">Tipo de mascota:</label>
+            <input type="text" name="tipo de mascota" placeholder="Tipo de mascota">
+         </div>
+         <div class="input-box">
+            <label for="mascota">Nombre de la mascota:</label>
+            <input type="text" name="nombre de la mascota" placeholder="Nombre de la mascota">
+         </div>
+         <div class="input-box">
+            <label for="mascota">Edad de la mascota:</label>
+            <input type="text" name="edad de la mascota" placeholder="Edad de la mascota">
+         </div>
+         <button>Enviar</button>
+         
+      </form>
+   
+   </section>
+</div>
+</body>
+
+
+<!--Footer-->
+<br>
+<br>
+</html>

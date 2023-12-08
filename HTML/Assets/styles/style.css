@@ -1,0 +1,97 @@
+/*variables*/
+:root{
+    --beige: #DD9F5A;
+    --hot-pink: #ED2431;
+    --olive: #5C5524;
+    --gray: #D9DED8;
+    --texto-general: #38342F;
+}
+/*Estilos generales*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../pexels-tina-nord-7324407.jpg);
+    background-size: cover;
+
+    
+}
+
+.abc{
+display: flex;
+justify-content: center;
+margin-top: 3%
+}
+.container{
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+    background-color:  rgb(113, 151, 153);
+    padding: 25px;
+    border-radius: 15px;
+    /* Esta es para la sombra al rededor de nuestro contenedor */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+
+}
+.container header{
+    font-size: 1.2 rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+.container .form {
+    margin-top: 15px;
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 10px ;
+}
+.input-box label{
+    color: #000;
+}
+.form :where(.input-box input){
+    position: relative;
+    height: 35px;
+    width: 93%;
+    outline: none;
+    font-size: 1rem;
+    color: #808080;
+    margin-top: 5px;
+    border: 1px solid #173732;
+    border-radius: 6px;
+    
+}
+.input-box input:focus{
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+.form .column1{
+    display: flex;
+    width: 96%;
+    column-gap: 25px;
+}
+.form .Hogar-box {
+    margin-top: 10px;
+}
+
+.form :where(.Hogar-box, .tipocasa, .tipoespacio){
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+    flex-wrap: wrap;
+}
+.form button{
+    height: 40px;
+    width: 94.2%;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2 ease;
+    background: #D5DEE5;
+
+}
+
+.form button{
+    background: #D5DEE5;
+}

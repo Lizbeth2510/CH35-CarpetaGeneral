@@ -1,18 +1,18 @@
 /*
-Funciones. Son bloques de código con instrucciones que se pueden reutilizar las veces que sean necesarias
-Algunas funciones reciben parámetros y otras reciben parámetos
+Funciones. Son bloques de código con instrucciones que se pueden reutilizar las veces que sean necesarias.
+Algunas funciones reciben parámetros y otras no
 Nota: Las funciones "normales" se llaman funciones por declaración
 */
 
-//Función que permita saludad 
+//Función que permita saludar
 function saludar() {
     console.log("Hola desde una función")
 }
-//Ejecutar la función con el nombre de la función y los parametros 
+//Ejecutar la función con el nombre de la función y los parámetros 
 saludar();
 
-//Hosting. Caracteristica dr una funcion que nos permite invocarla desde antes de su inicializacion, es decir, se puede invocar antes del bloque de código o despues.}
-//Se invoca en la linea 11 y 18
+//Hoisting. Caracteristica de una funcion que nos permite invocarla desde antes de su inicializacion, es decir, se puede invocar antes del bloque de código o despues.}
+//Se invoca en la linea 12 y 19
 function saludar(){
     console.log("Hola invocando la función con hoisting")
 }

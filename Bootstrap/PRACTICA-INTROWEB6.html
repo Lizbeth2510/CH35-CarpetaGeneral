@@ -3,60 +3,68 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lizbeth Cerón" />
+    <meta name="description" content="Portafolio web perosnal de Lizbeth Cerón">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Vinculo mi hoja styles.css -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/stylespractica6.css" >
+    
     <!-- Personalizo el title de mi página -->
-    <title>Mi portafolio</title>
+    <title>Lizbeth Cerón | Portafolio personal</title>
     <!--vinculacion con bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!--vinculacion con css-->
-    <link rel="stylesheet" href="./styles/stylespractica6.css" >
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- Añado un pequeño icono a la página desde mi carpeta de imágenes -->
-    <link rel="icon" type="image/png" href="./assets/foldergreygithub_93224.png" />
+  <link rel="shortcut icon" href="./assets/portafolio-profesional.png" type="image/x-icon">
 
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Acerca de mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Mis proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-lig">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/token_crypto_portfolio_icon_225985.png" alt="Portafolio personal">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Sección principal -->
+  <section class="hero">
+    <div class="hero-principal">
+      <img class="hero-img" src="./assets/1695766834482.jpg" alt="Foto de persona">
+      <h1>Hola, soy Lizbeth Cerón</h1>
+      <h2>Desarrolladora Java Full Stack Jr y Economista </h2>
+    </div>
+    <div class="hero-inferior">
+        <img class="hero-inferior-img" src="./assets/hero-inferior.svg" alt="Monitor, HTML, CSS, Bootstrap">
+    </div>
 
-
-
-
+  </section>
 
 
 

@@ -18,7 +18,7 @@ function saludar(){
 }
 saludar();
 
-//Funciones que retornan algo.Para que una funcion retorne algo (un String, una operación, una variable, etc.), necesitamos indicarle al código de la función que vamos a retornar mediante la palabra return
+//Funciones que retornan algo. Para que una funcion retorne algo (un String, una operación, una variable, etc.), necesitamos indicarle al código de la función que vamos a retornar mediante la palabra return
 function greeting(){
     return "Hola desde una función que retorna";
 }

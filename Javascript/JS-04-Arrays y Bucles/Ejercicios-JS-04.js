@@ -62,30 +62,30 @@ Escribe un programa que determine si un número ingresado por el usuario es prim
 //  console.log("Ejercicio de numeros primos");
 
 
-// //*Un número primo siempre debe ser mayor o igual a 1 por eso:
+ //*Un número primo siempre debe ser mayor o igual a 1 por eso:
 
-// function siEsPrimo (numero){
-//     if (numero <= 1){       //un múmero primo siempre debe ser >=1
-//         return false;
-//     }
-//     for(let index = 2; index <= numero / 2; index++){ //Vamos a verificar si el num. es divisible por algún otro num. desde el 2 hasta su mitad
-//         if(numero % index == 0){
-//             return false;     //Si el residuo es cero, es divisible por otro numero y no es primo
-//         }
-//     }
-//             return true;  //Si el residuo es diferente de ccero, no hay más divisores y es primo 
-// }
+ function siEsPrimo (numero){
+     if (numero <= 1){       //un múmero primo siempre debe ser >=1
+         return false;
+     }
+     for(let index = 2; index <= numero / 2; index++){ //Vamos a verificar si el num. es divisible por algún otro num. desde el 2 hasta su mitad
+         if(numero % index == 0){
+             return false;     //Si el residuo es cero, es divisible por otro numero y no es primo
+         }
+     }
+             return true;  //Si el residuo es diferente de ccero, no hay más divisores y es primo 
+ }
 
-// //*Para obtener el numero del usuario 
+ //*Para obtener el numero del usuario 
 
-// let numeroUsuario = prompt("Introduce un número para saber si es primo o no lo es");
+ let numeroUsuario = prompt("Introduce un número para saber si es primo o no lo es");
 
-// //*Para verificar que el numero del usuario es primo
-// if(siEsPrimo(numeroUsuario)){
-//     console.log(numeroUsuario + " es un múmero primo");
-// } else{
-//     console.log(numeroUsuario + " no es un primo");
-// }
+ //*Para verificar que el numero del usuario es primo
+ if(siEsPrimo(numeroUsuario)){
+     console.log(numeroUsuario + " es un múmero primo");
+ } else{
+     console.log(numeroUsuario + " no es un primo");
+ }
 
 
 /*
@@ -96,7 +96,7 @@ function numFibonacci(n){
     let terminosComienzo = [0, 1];
 
     for (let index = 2; index < n; index++) {
-        let terminoFinal = terminosComienzo[index - 1] + terminosComienzo[index - 2];
+        let terminoFinal = terminosComienzo[index - 1] + terminosComienzo[index - 2]; //index - 1, enla posicion del index que nos encontrmos y vamps a tomar el index anterior y para le -2 vamos a tomar el index que esta dos lugares hacia la izquierda que nuestro index
         terminosComienzo.push(terminoFinal);
     }
 

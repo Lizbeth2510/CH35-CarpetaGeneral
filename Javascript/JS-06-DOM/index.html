@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-DOM Manipulation</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+<!--Vamoa crear 5 elementos: h1.title, h2.title, h3.title, h3.title y div#dif
+
+h1.title+ h2.title,+h3.title+h3.title+div#dif (para hacer todos al mismo tiempo) -->
+
+
+<h1 class="title" id="title1">Dom manipulation</h1>
+<h2 class="title" id="title2">JavaScript - 06</h2>
+<h3 class="title" id="title3"> El DOM es una API para manipular el HTML</h3>
+<h3 class="title" id="title4">Usa nodos para acceder, modificar, crear y eliminación</h3>
+
+<div id="dif"></div>
+<br>
+<a href="./pages/App.html">-- Vamos a App.HTML --</a>
+<br>
+<br>
+<hr>
+<!--Button hidden-->
+<button id="card-btn">Mstrar / Ocultar elementos </button>
+
+<!--Card profiele-->
+<div class="container" id="container-div">
+    <div class="main container">
+        <h2>Eventos</h2>
+        <!--Forms-->
+        <label for="">Username</label>
+        <input type="text" name="name" id="name" placeholder="Escribe tu nombre de usuario">
+        <button id="btn-main">Actualizar perfil</button>
+    </div>
+    <div class="profile">
+        <h3 id="username"></h3>
+        <h4 id="edad"></h4>
+        <p id="email"></p>
+        <ul id="fav-films"></ul>
+    </div>
+    <br><br><br><br>
+</div>
+
+
+
+
+ <script src="./src/index.js"></script>   
+ <script src="./src/Button.js"></script>
+ <script src="./src/card.js"></script>
+</body>
+</html>

@@ -46,7 +46,7 @@ console.log(`Vendi ${aguinaldo} aguinaldos`);
 
 
 // 3. Cuenta regresiva
-let cuentaregresiva = 15;
+let cuentaregresiva = 3;
 for(cuentaregresiva; cuentaregresiva >= 0; cuentaregresiva--){
     console.log(`Quedan ${cuentaregresiva} para terminar el año, khe moziooon!`);
 }

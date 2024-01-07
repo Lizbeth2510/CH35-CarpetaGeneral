@@ -16,7 +16,7 @@ Clases: Plantillas para crear objetos. Nos ayudan a definir un tipo de objeto y 
 A partir de mi clase puedo crear multiples objetos, una clase es como un molde que crea objetos, a pesar de que los objetos vienen del mismo molde van a ser diferentes*/
 
 
-//dentro de esta clase las personas van a tener nombre, apellido, edad, ...etc. Dentro de esta clase persona va a haber multiples personas, pero aunque tuvieran algunos atributos iguales  no lo van ser iguales totalmente porque ocupan un lugar distinto en la memoria de nuestro programa.
+//dentro de esta clase las personas van a tener nombre, apellido, edad, ...etc. Dentro de esta clase persona va a haber multiples personas, pero aunque tuvieran algunos atributos iguales  no van ser iguales totalmente porque ocupan un lugar distinto en la memoria de nuestro programa.
 class persona { 
     nombre = "";
     apellido = "";
@@ -76,6 +76,7 @@ mostrarInfo(){
 }
 
 //Ya estamos instanciando nuestro objeto 
+// let (variable nueva) = new (class) ((parametros que establecimos))
 let usuario1 = new persona ("Lizbeth", "Cerón", 25, "lizbethale251098@gmail.com", "5556487535");  
 let usuario2 = new persona ("Alejandra", "Flores", 25, "lizbethale2510@gmail.com", "5547946535");
 let usuario3 = new persona ("Sandra", "Martínez", 30, "sandra.mtz@gmail.com", "5516452845");
@@ -97,9 +98,9 @@ usuario6.bailar();
 usuario1.mostrarInfo(); //nos permite imprimir nuestro objeto con sus atributos (la información del usuario 1 )en el formato de "mostrarInfo"
 console.log(usuario3.telefono, usuario5.apellido);
 
-//clase nos sirve como modelo para crear una plantilla y el objeto es una entidiad que tiene  atributos concretos y especificos
+//clase nos sirve como modelo para crear una plantilla y el objeto es una entidad que tiene  atributos concretos y especificos
 
-//las clases nos ayuda a tener a nuestros objetos separados, pero que contienen la misma clase. 
+//las clases nos ayudan a tener a nuestros objetos separados, pero que contienen la misma clase. 
 
 
 //--------------------------------------------------------------
@@ -114,6 +115,8 @@ console.log(usuario3.telefono, usuario5.apellido);
 */
 
 // ***HERENCIA: nos permite a heredar a clases inferiores para poder optimizar el programa 
+
+//"La herencia permite que una clase (llamada clase derivada o subclase) herede atributos y métodos de otra clase (llamada clase base o superclase). Esto fomenta la reutilización de código y facilita la creación de nuevas clases basadas en las existentes, extendiendo su funcionalidad."
 
 
 
@@ -185,7 +188,9 @@ arrendador1.mostrarInfo();
 
   /*POLIMORFISMO: Tener objetos de diferentes tipos que pueden ser manipulados en conjunto
 
-  ***NOTA: el polimorfismo nos da capacidad de cambiar a nuestros objetos aunque no estén en nuestra misma clase */
+  ***NOTA: el polimorfismo nos da capacidad de cambiar a nuestros objetos aunque no estén en nuestra misma clase
+  
+  "La herencia permite que una clase (llamada clase derivada o subclase) herede atributos y métodos de otra clase (llamada clase base o superclase). Esto fomenta la reutilización de código y facilita la creación de nuevas clases basadas en las existentes, extendiendo su funcionalidad."*/
 
 //clase
   class producto {
@@ -208,7 +213,7 @@ constructor(marca, precio){
   }
 
 //instanciar
-let producto1 = new producto ("cerve", 150);
+let producto1 = new producto ("cerave", 150);
 
 //Por ejemplo si queremos hacer un cambio en los limpiadores faciales, podemos acceder a la clase limpiadores faciales en barra, en liquido y en espuma
 
@@ -245,6 +250,8 @@ gato.sonido(); //el mismo método sonido(), para gato muestra "miau"
 
 
 /* ENCAPSULAMIENTO: oculta o muestra la implementación de un objeto y solo muestra los datos necesarios, por ejemplo, en las contraseñas 
+
+"El encapsulamiento implica el ocultamiento de los detalles internos de un objeto y el acceso controlado a sus datos y funcionalidades. En POO, se utilizan clases para definir la estructura y el comportamiento de los objetos. Las clases encapsulan los datos (atributos) y los métodos (comportamientos) relacionados en un solo lugar, protegiendo los datos sensibles y exponiendo solo la interfaz necesaria para interactuar con el objeto."
 */
 
 class Usuario{
@@ -266,6 +273,8 @@ class Usuario{
 //ABSTRACCION: no es nada más que traer objetos del mundo real y poder aplicarlos a la programación mediante clases, métodos, constructores y objetos 
 
 // En unn objeto Json la mayoria de sus datos son string.Los objetos de tipo Json en un formato de intercambio de datos ligero, accesible, estructurado, manipulable (DOM) y que nos brindan una mejor comunicación entre el cliente y el servidor. Esto gracias a que son más flexibles y generalmente se ejecutan con fetch.
+
+//"En POO, se crea una representación simplificada de un objeto del mundo real enfocándose en sus propiedades y comportamientos relevantes. Por ejemplo, si consideramos un objeto "Coche", podríamos abstraer sus propiedades esenciales como modelo, color y velocidad, y sus comportamientos como acelerar, frenar y girar.""
 
 let objetoJson = {
     "nombre": "Juanin",
@@ -294,19 +303,33 @@ console.log(objetoLiteral);
 
 /*Principios solid ---> estudiar patrones 
 
-/*1.  Principio de responsabilidad única /single Responsability principle)
-Una clase debe tener asignada una tarea o responsabilidad específica y ésta no debería cambiar 
+/*
+1.  Principio de responsabilidad única /single Responsability principle)
+Una clase debe tener asignada una tarea o responsabilidad específica y ésta no debería cambiar.
+Es decir, se espera que las clases tengan solo una tarea concreta y especifica; si una clase tiene demasiadas tareas puede que ésta sea dificil y confusa al momento de utilizarla. Por ello, es mejor tener clases más pequeñas que ayuden a tener un código más legible, facilitando su mantenimientos y reduciendo la probabilidad de errores. 
 
 2. Principio abierto/  cerrado (open/ closed principle OCP)
-Una clase puede estar abierta a extensiones y agregar nuevas funcionalidades, pero sin generar cambios en la misma 
+Una clase puede estar abierta a extensiones y agregar nuevas funcionalidades, pero sin generar cambios en la misma.
+El principio establece que las entidades de softwere (clases, modulos, funciones, etc.) deben estar abiertas para la extensión, pero cerradas a la modificación. Es decir, nos dice que debemos escribir nuestro código de tal manera que podamos añadir nuevas cosas, sin necesidad de cambiar lo que ya está escrito. 
 
 3. Principio de sustitución (Liskov Sustitution Principle LSP)
-Una clase hijo puede sustituir objetos de una clase padre 
+Una clase hijo puede sustituir objetos de una clase padre. Cualquier clase derivada o subclase debe ser capaz de ser sustituida por su clase base sin cambiar el comportamiento esperado del programa.
+Es decir, este principio nos dice que cualquier clase hijo puede sustituir a la clase padre sin que el programa se rompa. Es como un  rompecabezas en el que se remplaza una pieza por otra que encaja perfectamente, de manera que el rompecabezas no se vea afectado. 
 
 4. Principio de segregación de interfaces (Interface Segregation Principle ISP)-- delimitar los metodos que vamos a utilizar para desarrollar nuestros objetos, constructores y demás, dejando fuera los innecesarios.
+Este principio nos dice que  los clientes no deben depender de interfaces que no utilicen. Es mejor tener interfaces más específicas que sean relevantes para las necesidades de los clientes, en lugar de tener una interfaz general grande que obligue a los clientes a depender de métodos que no necesitan. De manera que, el principio nos dice las interfaces (las cosas que una clase puede hacer) deben ser definidas de manera clara y especifica y no ser demasiado grandes; se deben definir los métodos que se necesitan y no más.
 
-5. Principio de inversión de dependencia (Dependency Inverson Principle DIP)-- no hay un numero limitado de clases, una buena practica es no tener mas de 3 o 4 clases, pero dpende de qué programa o como lo trabajes. 
-Teniendo la base bien marcada, es más facil contruir lo que tenemos que contruir después 
+
+5. Principio de inversión de dependencia (Dependency Inverson Principle DIP)-- no hay un numero limitado de clases, una buena practica es no tener mas de 3 o 4 clases, pero dpende de qué programa o cómo lo trabajes. 
+Teniendo la base bien marcada, es más facil construir lo que tenemos que construir después.
+
+El DIP sugiere que los módulos de alto nivel no deben depender de módulos de bajo nivel, sino que ambos deben depender de abstracciones. Además, las abstracciones no deben depender de detalles concretos, sino al revés: los detalles deben depender de las abstracciones. Esto promueve la flexibilidad y facilita los cambios en el código al reducir el acoplamiento entre diferentes componentes.
+
+Este principio es una forma de hacer que nuestro código sea más flexible y fácil de cambiar en un futuro. Cuando escribimos nuestro codigo, las partes importantes deberian depender de abstracciones en lugar de depender unas directamente de otras. Es decir, en lugar de escribir un código que dependa directamente de otros detalles concretos, se usan las abstracciones.
+
+Por ejemplo, si trabajamos con clases, en lugar de que una clase especifica dependa directamente de otras clases en concreto, se busca que éstas no estén directamente relacionadas, sino  que se establezcan clases o interfaces más generales que permitan la abastracción.
+Siguiendo con el ejemplo, si tenemos una clase A que necesita usar una funcionalidad que posee la clase B, lo ideal es que ambas clases no se relaciones entre sí( o en este caso que A dependa de B), sino más bien lo que se busca es crear una clase base que permita a B heredar ciertas funcionalidades, de esta manera A podría abstraer ciertas funcionalidades que posee la clase B, pero desde la clase base. 
+El hecho de que no exista esta relación directa, permite que al modificar la clase B, la clase A no se vea afectada por estos cambios. La idea es que las partes más importantes de nuestro código dependan de abstracciones que puedan ser intercambiadas de manera más facil sin tener que afectar al resto del sistema. 
 */
 
 

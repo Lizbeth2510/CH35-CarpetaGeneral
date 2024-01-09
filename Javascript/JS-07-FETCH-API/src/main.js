@@ -37,6 +37,8 @@ oneAsync();*/
 
 /**
  * Trabajando con promesas mediante Fetch API
+ * 
+ * "fetch es una API de JavaScript que proporciona una forma moderna y poderosa de hacer solicitudes HTTP a recursos en la web. Se utiliza principalmente para realizar peticiones a servidores remotos y obtener recursos como datos JSON, archivos, HTML, etc."
  */
 const url = "https://jsonplaceholder.typicode.com/users";
 
@@ -107,7 +109,7 @@ botonProductos.addEventListener("click", () => {
             //Función para definir
             mostrarProductos(productos);
         })
-        .catch(error => console.error("Cuidado!", error))
+        .catch(error => console.error("Cuidado ha ocurrido un error!", error))
 });
 
 //Función para crear, agregar y mostra elementos desde el DOM
@@ -180,7 +182,7 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
  const getUser = async() =>{  
     //Para que se cumpla la promesa no utilizamos then, sino que utilizamos try. Para errores se sigue usando catch
     try{
-        //Retardo para que se ejecute de manera asíncrona. Tengo que crear una nueva promesa que qrecibe un setTimeout
+        //Retardo para que se ejecute de manera asíncrona. Tengo que crear una nueva promesa que recibe un setTimeout
        await new Promise(resolve => setTimeout(resolve, 3000)); //para ejecutar tres segundos después
 
         const response = await fetch("https://jsonplaceholder.typicode.com/users/4");
@@ -200,7 +202,7 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
  /* localStorage*/
  //Nos permite crear, modificar, eliminar, guardar objetos de javascript de manera local (en el equipo)
 
- //crear un ibjeto de JS con sus llaves y valores
+ //crear un objeto de JS con sus llaves y valores
  const user = [
  {
     id: 1,

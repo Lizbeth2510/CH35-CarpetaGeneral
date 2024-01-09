@@ -314,7 +314,7 @@ if(! esDiaLibre){
         if (huevos >= 2 && harina >= 500 && leche >= 375 && mantequilla >=2) {
             return "Tienes suficientes ingredientes para hacer hotcakes.";
         } else {
-            return "No tienes la cantidad suficiente de ingredientes.";
+            return "No tienes la cantidad suficiente de ingredientes para cocinar los hot cakes .";
         }
     }
     

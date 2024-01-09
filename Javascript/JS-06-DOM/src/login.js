@@ -10,7 +10,7 @@ submitButton.disabled = true;
 /**
  * Evento para input, el cual evaluará el patrón de expresión regular y en caso de cumplir con el patrón, habilitará el botón y podremos ser redirigidos a la pagina index.htm
  * 
- * el objetivo es habitidar el boton e ir a index.html
+ * el objetivo es habilitar el boton e ir a index.html
  *-Se obtienen el valor actual del campo email (imput) usando e.target.value y se almacena en una variable (text)
  - target es es una manera de traer el valor actual del objeto
  -se evalua la REGEX

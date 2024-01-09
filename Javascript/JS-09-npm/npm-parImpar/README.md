@@ -13,7 +13,7 @@ Me guiará a traves de una serie de pasos donde me solicite información relacio
     -La información se estructura como un objeto de JS con notación JSON
 3.Crear un acarpeta llamada `modules` en donde vivirá nuestro script
 4. Dentro de `modules` crear el script (js.) con el nombre `parimpar.js` 
-5.Crear la funci´ón del script y esportarlo con `export default` 
+5.Crear la función del script y exportarlo con `export default` 
 6. Importar el script desde el archivo `index.js` con `import + function + from + ruta con extensión` e invocamos la función con parámetros.
     ```javascript
     import determinarParImpar from "./modules/parimpar.js";

@@ -2,7 +2,7 @@
  /*
  * Control de flujo y estructuras de contol:
  *
- *Las estructutas de control son un componente fundamenral  dentro de la programación, entre algunas de las facilidades y ventajas que nos proporcionan para escribir y depurar código podemos mencional las siguientes:
+ *Las estructutas de control son un componente fundamental  dentro de la programación, entre algunas de las facilidades y ventajas que nos proporcionan para escribir y depurar código podemos mencional las siguientes:
  *
  - Tomar decisiones basadas en condiciones especificas, esto produce un codigo
  * tanto dinamico como adaptable
@@ -11,7 +11,7 @@
  * de una forma eficiente sin caer en la redaccion de codigo innecesario y repetitivo
  * 
  - Facilitar el control de flujo de una operacion, brindandonos la oportunidad de ser
- * especificos en indicar qe instrucciones ejecutar y en que orden
+ * especificos en indicar que instrucciones ejecutar y en que orden
  * 
   - Optimizan el rendimiento de nuestro codigo, ya que evita oportunamente ejecutar instrucciones
  * en caso de que no se necesite
@@ -94,6 +94,7 @@ if(edad < 18){
 
 */
 
+//empezamos por crear una variable 
 let dia = "miércoles";
 switch (dia){
     case "lunes" :
@@ -128,7 +129,7 @@ switch (dia){
 
     *Expresion condicional if-else más simple y legible
     *Principalmente se usa para simplificar condiciones de una sola expresión
-    *También puede anidar sentencias if-else-if, sin embargo, no es recomendado porque el código se puede volver confuso y poco legible.}
+    *También puede anidar sentencias if-else-if, sin embargo, no es recomendado porque el código se puede volver confuso y poco legible.
     *Su declaración es la siguiente-:
 
     *palabra reservada var, let o const:
@@ -171,6 +172,8 @@ if(edaSuficiente>=18){
 } else{
 console.log("Lo siento! aún eres pequeño");
 }
+
+
 
 
 /** Ejercicio 2
@@ -216,7 +219,7 @@ divisible7y8(73);
  * Consideracion - Utilizar la estructura if-else
  */
 
-//Función que evalua si nuesttro numero es divisible entre 4 o 9
+//Función que evalua si nuestro numero es divisible entre 4 o 9
 function divisible4o9 (numero){
     if(numero % 4 ==0 || numero % 9 ==0){
         return true;

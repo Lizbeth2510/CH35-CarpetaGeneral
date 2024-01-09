@@ -15,6 +15,7 @@ Clases: Plantillas para crear objetos. Nos ayudan a definir un tipo de objeto y 
 
 A partir de mi clase puedo crear multiples objetos, una clase es como un molde que crea objetos, a pesar de que los objetos vienen del mismo molde van a ser diferentes*/
 
+//EJEMPLO
 
 //dentro de esta clase las personas van a tener nombre, apellido, edad, ...etc. Dentro de esta clase persona va a haber multiples personas, pero aunque tuvieran algunos atributos iguales  no van ser iguales totalmente porque ocupan un lugar distinto en la memoria de nuestro programa.
 class persona { 
@@ -75,6 +76,8 @@ mostrarInfo(){
 
 }
 
+
+//instanciar
 //Ya estamos instanciando nuestro objeto 
 // let (variable nueva) = new (class) ((parametros que establecimos))
 let usuario1 = new persona ("Lizbeth", "Cerón", 25, "lizbethale251098@gmail.com", "5556487535");  
@@ -190,7 +193,7 @@ arrendador1.mostrarInfo();
 
   ***NOTA: el polimorfismo nos da capacidad de cambiar a nuestros objetos aunque no estén en nuestra misma clase
   
-  "La herencia permite que una clase (llamada clase derivada o subclase) herede atributos y métodos de otra clase (llamada clase base o superclase). Esto fomenta la reutilización de código y facilita la creación de nuevas clases basadas en las existentes, extendiendo su funcionalidad."*/
+  "El polimorfismo permite que objetos de diferentes clases respondan al mismo mensaje o método de manera diferente. Esto se logra mediante el uso de métodos con el mismo nombre pero con implementaciones distintas en las clases relacionadas."
 
 //clase
   class producto {
@@ -274,7 +277,7 @@ class Usuario{
 
 // En unn objeto Json la mayoria de sus datos son string.Los objetos de tipo Json en un formato de intercambio de datos ligero, accesible, estructurado, manipulable (DOM) y que nos brindan una mejor comunicación entre el cliente y el servidor. Esto gracias a que son más flexibles y generalmente se ejecutan con fetch.
 
-//"En POO, se crea una representación simplificada de un objeto del mundo real enfocándose en sus propiedades y comportamientos relevantes. Por ejemplo, si consideramos un objeto "Coche", podríamos abstraer sus propiedades esenciales como modelo, color y velocidad, y sus comportamientos como acelerar, frenar y girar.""
+//"En POO, se crea una representación simplificada de un objeto del mundo real enfocándose en sus propiedades y comportamientos relevantes. Por ejemplo, si consideramos un objeto "Coche", podríamos abstraer sus propiedades esenciales como modelo, color y velocidad, y sus comportamientos como acelerar, frenar y girar."
 
 let objetoJson = {
     "nombre": "Juanin",
@@ -381,10 +384,10 @@ class alumno{
   }
   
   //instanciar
-  const alumno1 = new alumno("María", 6);
+  let alumno1 = new alumno("María", 6);
   alumno1.imprimeCal(); 
   alumno1.evaluacion();
   
-  const alumno2 = new alumno("Alan", 5.2);
+  let alumno2 = new alumno("Alan", 5.2);
   alumno2.imprimeCal();
   alumno2.evaluacion();

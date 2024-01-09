@@ -1,0 +1,37 @@
+.navbar--container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow: hidden;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.navbar--title{
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    font-family: 'Bungee Spice', sans-serif;
+    
+}
+
+.navbar--links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+.navbar--link{
+    padding: 5px 20px;
+}
+a{
+    text-align: none;
+    color: #4d5a51;
+}

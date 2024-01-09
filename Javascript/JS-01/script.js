@@ -60,9 +60,10 @@ var, let, const: La diferencia es el alcance
     let: tiene un alcance local
     const: se mantiene sin ningún cambio*/
 
-/*string:cadena de texto (lleva comillas)
+/*
+string:cadena de texto (lleva comillas)
 number: numero
-noolena: true/false
+boolena: true/false
 null:nulo
 undefinied:no esta asigando o definido*/
 
@@ -76,7 +77,7 @@ undefinied:no esta asigando o definido*/
 //  let invitadoEspecial = null;
 //  let horaDeSalida = undefined;
 
-// console.log(nombre); //lo imprime en la ocnsola
+// console.log(nombre); //lo imprime en la consola
  //document.write(nombre) //lo imprime en el documento
 
 
@@ -84,7 +85,7 @@ undefinied:no esta asigando o definido*/
 /*Encasillamiento o tipado
 -Nos es util para el mantenimiento del código ya que lo hace más legible y fácil de entender 
 -Nos ayuda a la prevención de errores para redecir la probabilidad de los mismos.
--Mejora wl rendimiento de nuestro programa*/
+-Mejora el rendimiento de nuestro programa*/
 
 // let numero = 15;
 // let texto = "Hola!";
@@ -213,7 +214,7 @@ console.log(`Mi nombre es ${firstName},
     - Los arrays se pueden manipular mediante métodos especificos.
     - Los elementos de una array se contabilizan como índices, por los cual, el primer elemento del array posee el indice 0. 
     - Un array posee una n cantidad de elementos
-    -Se declaran como variables, seguido del signo igual y corchetes. Dentro de cada corchete vivie un elemento con un tipo de dato*/
+    -Se declaran como variables, seguido del signo igual y corchetes. Dentro de cada corchete vive un elemento con un tipo de dato*/
 
     let arreglo1 = []; //Array vacio
     console.log(`Array vacío ${arreglo1}`);

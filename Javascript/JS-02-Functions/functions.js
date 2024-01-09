@@ -11,7 +11,7 @@ function saludar() {
 //Ejecutar la función con el nombre de la función y los parámetros 
 saludar();
 
-//Hoisting. Caracteristica de una funcion que nos permite invocarla desde antes de su inicializacion, es decir, se puede invocar antes del bloque de código o despues.}
+//Hoisting. Característica de una funcion que nos permite invocarla desde antes de su inicializacion, es decir, se puede invocar antes del bloque de código o después.
 //Se invoca en la linea 12 y 19
 function saludar(){
     console.log("Hola invocando la función con hoisting")
@@ -31,7 +31,7 @@ function sumar(x,y){
 let resultado = sumar(255, 245);
 console.log(`El resultado de sumar x + y es ${resultado}`);
 
-//Calcula er el cuadrado de un numero
+//Calcula  el cuadrado de un numero
 function calcCuadrado(numero){
     return numero * numero;
 }

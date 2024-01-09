@@ -9,7 +9,7 @@ const user = {
     favfilms: ['HomeTown cha cha cha', 'Our beloved summer', 'Its ok to not be ok ']
 }
 //Crear una función que me permita ingresar el objeto del perfil en el nodo padre
-//textConter me permite agregar texto a un nodo que ya existe
+//textContet me permite agregar texto a un nodo que ya existe
 const createUser = (user) => {
     document.getElementById("username").textContent = user.username;
     document.getElementById("edad").textContent = user.age;

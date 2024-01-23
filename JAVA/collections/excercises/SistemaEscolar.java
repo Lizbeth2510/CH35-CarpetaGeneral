@@ -80,6 +80,34 @@ public class SistemaEscolar {
 		
 		
 		
+		 // Eliminar estudiantes después de haberlos agregado
+        System.out.print("\nIngrese el nombre del estudiante que desea eliminar: ");
+        String estudianteEliminar = scan.nextLine();
+
+        // Verificar si el estudiante existe en la lista antes de intentar eliminarlo
+        if (estudiantes.contains(estudianteEliminar)) {
+        	estudiantes.remove(estudianteEliminar);
+            System.out.println(estudianteEliminar + " eliminado exitosamente.");
+        } else {
+            System.out.println(estudianteEliminar + " no encontrado en la lista.");
+        }
+        
+        // Mostrar la lista actualizada de nombres de estudiantes
+        System.out.println("\nLista de Estudiantes actualizada:");
+        for (String estudiante : estudiantes) {
+            System.out.println(estudiante);
+        }
+		scan.close();
+		
+		/*
+		 * Modificar nuestro programa para permitir salir con las palabras 'Salir' o 'salir'.
+		 * Agregar la opción que permite que el usuario elimine un estudiante después de haberlo agregado y muestre la lista actualizada después de la eliminación (.remove();).
+		 */
+		
+		
+		
+		
+		
 	}//metodo main
 
 }//clase
